@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb+srv://Yashjaswal:Yash12345admin@cluster0.damzdoq.mongodb.net/?appName=Cluster0")
+const MONGO_URI="mongodb+srv://Yashjaswal:Yash12345admin@cluster0.damzdoq.mongodb.net/?appName=Cluster0"
+mongoose.connect(MONGO_URI)
 .then(()=> console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
