@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const app= express();
 
-mongoose.connect("mongodb+srv://Yashjaswal:Yash12345admin@cluster0.damzdoq.mongodb.net/?appName=Cluster0")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
