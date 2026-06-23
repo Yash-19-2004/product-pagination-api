@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb://127.0.0.1:27017/productdb")
+mongoose.connect("mongodb+srv://Yashjaswal:Yash12345admin@cluster0.damzdoq.mongodb.net/?appName=Cluster0")
 .then(()=> console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 

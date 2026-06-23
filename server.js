@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const app= express();
 
-mongoose.connect("mongodb://127.0.0.1:27017/productdb")
+mongoose.connect("mongodb+srv://Yashjaswal:Yash12345admin@cluster0.damzdoq.mongodb.net/?appName=Cluster0")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
@@ -19,7 +19,7 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model("Product",productSchema);
 
 app.get("/products",async(req,res) => {
-  
+
   const {category,cursor} = req.query;
 
   let query= {};
